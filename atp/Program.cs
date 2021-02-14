@@ -13,7 +13,7 @@ namespace atp
         {
             Players players = new Players(@"Data Source=localhost;Initial Catalog=ATPrank;Integrated Security=True");
             Coach coaches = new Coach(@"Data Source=localhost;Initial Catalog=ATPrank;Integrated Security=True");
-            Country countries = new Country(@"Data Source=localhost;Initial Catalog=ATPrank;Integrated Security=True");
+            Countries countries = new Countries(@"Data Source=localhost;Initial Catalog=ATPrank;Integrated Security=True");
             Surface surface = new Surface(@"Data Source=localhost;Initial Catalog=ATPrank;Integrated Security=True");
 
             //IList<Models> CoachModels = coaches.FullName();
@@ -33,7 +33,7 @@ namespace atp
                 Console.WriteLine("\n\n\nDecide what you want to do:\n0-quit\n1-Get list all players(name surname)\n2-Get list all coaches(name surname)" +
                                    "\n3-Get list all countries\n4-Insert new Player\n5-View \n6-Rank\n" +
                                    "7-Players without coach\n8-Group by age ASC\n9-Group by age DESC\n" +
-                                   "10-Group by Hand(right or left)\n11-Group by Backhand(one-handed double)\n12-Surface info"
+                                   "10-Group by Hand(right or left)\n11-Group by Backhand(one-handed double)\n12-Surface info\n13-Top country in the rank"
                                    );
                 try
                 {

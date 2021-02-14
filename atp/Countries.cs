@@ -5,11 +5,11 @@ using System.Text;
 
 namespace atp
 {
-    class Country
+    class Countries
     {
         private string _connectionString;
 
-        public Country(string connectionString)
+        public Countries(string connectionString)
         {
             _connectionString = connectionString;
         }
