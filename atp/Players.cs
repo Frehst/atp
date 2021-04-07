@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Web;
 
 namespace atp
 {
@@ -85,6 +82,7 @@ namespace atp
                 }
                 Console.WriteLine("If you don't have a coach -0");
                 var coachID = Convert.ToInt32(Console.ReadLine());
+                // przy 89 nie ma imienia i nazwiska , wiec ustawiam na 89 
                 if(coachID == 0)
                 {
                     coachID = 89;

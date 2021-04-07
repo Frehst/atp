@@ -16,15 +16,6 @@ namespace atp
             Countries countries = new Countries(@"Data Source=localhost;Initial Catalog=ATPrank;Integrated Security=True");
             Surface surface = new Surface(@"Data Source=localhost;Initial Catalog=ATPrank;Integrated Security=True");
 
-            //IList<Models> CoachModels = coaches.FullName();
-            //IList<Models> SurfaceModels = surface.Info();
-            IList<Models> PlayerModels = players.View();
-
-
-
-            List<string> CountryList = new List<string>();
-            List<string> Countrylist = new List<string>();
-
             int decision = 1;
 
             Console.WriteLine("ATP RANK");
